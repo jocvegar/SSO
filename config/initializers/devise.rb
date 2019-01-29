@@ -9,6 +9,7 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = 'dc2105ebfab8195cdf19bf544f970dfc4dad8523b4411f31c8c82c127222b59a73df48695ac7c44a1be92cc7880718390905933f63f65b6d018bb974ab75e65e'
+  config.secret_key = 'b253dc8504dec5184215a8beb736138fb27688f568f0909424ad6f28998591320dc8ef5c5138a7224e23bbac26483c82c3e3d3349a6f6250acfb4cd333502d43'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -258,6 +259,7 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   config.omniauth :facebook, "1297758377031400", "1fce5532c355be7706fdc13b9a0e8483"
+  config.omniauth :twitter, "bzZnmor2Q3GtxUxllMUiWnpa4", "gURt692jUMj21Mk12UGfetW2FCpSnO2giZNkueHIy0hFU7FEdw"
 
 
   # ==> Warden configuration
