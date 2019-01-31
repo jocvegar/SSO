@@ -261,6 +261,12 @@ Devise.setup do |config|
   config.omniauth :facebook, "1297758377031400", "1fce5532c355be7706fdc13b9a0e8483"
   config.omniauth :twitter, "bzZnmor2Q3GtxUxllMUiWnpa4", "gURt692jUMj21Mk12UGfetW2FCpSnO2giZNkueHIy0hFU7FEdw"
 
+  config.omniauth :saml_idp1,
+      idp_cert_fingerprint: 'https://calnet-tin.ist.berkeley.edu/shib/shib-test.b.e-idp.crt',
+      idp_sso_target_url: 'https://shib-test.berkeley.edu/idp/profile/SAML2/POST/SSO',
+      strategy_class: ::OmniAuth::Strategies::SAML,
+      name: :saml_idp1
+
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

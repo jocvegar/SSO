@@ -8,6 +8,8 @@
 	<%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>
 	<br>
 	<%= link_to "Sign in with Twitter", user_twitter_omniauth_authorize_path %>
+	<br>
+	<%= link_to "Sign in with SAML", user_saml_idp1_omniauth_authorize_path %>
 <% else %>
 	<%= link_to "Logout", destroy_user_session_path, method: :delete %>
 <% end %>
